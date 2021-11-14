@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Header</title>
+
+  <style>
+      body {
+  margin: 0;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 'header header' 'nav content';
+}
+
+.header {
+  grid-area: header;
+  background: #FB000D	;
+}
+.nav {
+  grid-area: nav;
+  background: #009D91;
+}
+.content {
+  grid-area: content;
+  background: #8AB32D;
+}
+  </style>
+
+</head>
+<body>
+  <div class='main'>
+  <div class='header'></div>
+  <div class='nav'></div>
+  <div class='content'></div>
+</div>
+</body>
+</html>

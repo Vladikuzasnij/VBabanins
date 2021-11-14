@@ -12,6 +12,15 @@
 	  
       <title>Gallery Latvia</title> 
 
+
+    <style>
+    .arrowR:hover {
+        background: url("images/arrow.png") no-repeat;
+    }
+    .arrowL:hover {
+        background: url("images/arrowR.png") no-repeat;
+    }
+    </style>
 </head> 
 
 
@@ -38,7 +47,9 @@
 
     <tr>
             
-			<td><a href="9page.html"><img src="images/arrow.png"></a></td>
+			<td>
+                <div class="arrowL"><a href="9page.html"><img src="images/arrow.png"></a></div>
+            </td>
 
     </tr>
 
@@ -48,12 +59,17 @@
 
     <tr>
             
-			<td><a href="2page.html"><img src="images/arrowR.png"></a></td>
+
+            <td>
+                <div class="arrowR"><a href="2page.html"><img src="images/arrowR.png"></a></div>
+            </td>
+        
 
     </tr>
 
 </table>
 
+<div class="arrowL"></div>
 <!---<div align="left" leftmargin="50%">
 <a href="index.html"><img src="images/arrow.png"></a>
 </div>

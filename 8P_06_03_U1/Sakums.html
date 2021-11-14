@@ -3,26 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <title>Sākumlapa</title>
+<link rel="shortcut icon" href="Logo2.svg">
 
 <style>
-    body {background-color: rgb(223, 255, 248);}
-    h1   {color: blue;}
-    p    {color: rgb(0, 100, 8);}
+
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(223, 255, 248);
+}
+
+h1 {
+  background-color: #eee23f;
+}
+
+span {
+  background-color: #ffffff;
+}
+
+h1   {
+    color: blue;
+}
+
+p    {
+    color: rgb(0, 100, 8);
+}
+
+body {
+  font-size: 20px;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:1500px; top:0px;}
+  25%  {background-color:yellow; left:1500px; top:0px;}
+  50%  {background-color:blue; left:1500px; top:200px;}
+  75%  {background-color:green; left:1500px; top:200px;}
+  100% {background-color:red; left:1500px; top:0px;}
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+} 
+
 </style>
 
 </head>
 <body>
-<h1><center>Par pilsētu</center></h1>
-<p><center>Stambula (turku: İstanbul) pēc iedzīvotāju skaita ir lielākā pilsēta Eiropā.</center></p>
-<p><a href="Geo.html">Ģeogrāfiskais stāvoklis</a></p>
-<p><a href="Klimats.html">Klimats</a></p>
-<p><a href="Centrs.jpg"><img src="Karte.jpg" alt="Karte" style="width:200px;"> </a></p>
-<p><a href="Objekti.html">Tūrisma objekti</a></p>
-<p><a href="http://howtoistanbul.com">Officiālā Istambulas mājaslapa</a></p>
 
-<p><a href="Dati.html">Dati</a></p>
-<p><a href="Sakums.html">Sākums</a></p>
-<p><a href="Vesture.html">Vēsture</a></p>
+<h1><center>Par pilsētu</center></h1>
+<p><center>Stambula <i>(turku: İstanbul)</i> pēc iedzīvotāju skaita ir lielākā pilsēta Eiropā.</center></p>
+
+<p><span><a href="Geo.html">Ģeogrāfiskais stāvoklis</a></span></p>
+<p><span><a href="Klimats.html">Klimats</a></span></p>
+<p><span><a href="Centrs.jpg"><img src="Karte.jpg" alt="Karte" style="width:200px;"></a></span></p>
+<p><span><a href="Objekti.html">Tūrisma objekti</a></span></p>
+<p><span><a href="http://howtoistanbul.com"Officiālā Istambulas mājaslapa</a></span></p>
+
+<p><span><a href="Dati.html">Dati</a></span></p>
+<p><span><a href="Sakums.html">Sākums</a></span></p>
+<p><span><a href="Vesture.html">Vēsture</a></span></p>
+
+
+<div></div>
+
 
 </body>
 </html>
