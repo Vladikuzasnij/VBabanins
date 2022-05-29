@@ -1,0 +1,122 @@
+<!DOCTYPE html>  <!Это стандартный обязательный код и таким образом можно также задавать комментарии в HTML файле>
+<html>   <!Начало всего кода>
+
+<!Это ознакомительный файл, он познакомит вас с основными самыми популярными тегами HTML>
+
+   <head>  <!Начало блока head>
+      <meta charset="UTF-8"/>  <!Это стандартный обязательный код>
+	  <link href="style.css" rel="stylesheet" type="text/css"/>   <!Этот код подключает файл CSS необходимый для оформления страницы>
+      <title>Тестовая страница</title>   <!Этот код задаёт название страницы вверху во вкладках браузера>
+   </head>  <!Конец блока head>
+
+   <body>   <!Начало блока body>
+
+      <h2>Привет всем!</h2>
+	  <h3>Полезные ссылки:</h3>
+	  Скачать Notepad++:
+	  <a href="https://notepad-plus-plus.org/downloads/">Download Notepad++</a><br/>
+	  Сайт со списком всех тегов в HTML:
+	  <a href="https://www.w3schools.com/tags/default.asp">HTML Element Reference</a><br/>
+	  Сайт со списком тегов в HTML на русском языке:
+	  <a href="https://ruseller.com/htmlshpora.php?id=1">HTML-Шпаргалка</a><br/>
+	  Сайт-книга про HTML
+	  <a href="http://htmlbook.ru/diveintohtml5">Сайт-книга HTML</a><br/>
+	  HTML5 и CSS3 на примерах
+	  <a href="https://webref.ru/layout/html5-css3">HTML и CSS на примерах</a><br/>
+	  Руководство для начинающих по HTML
+	  <a href="https://developer.mozilla.org/ru/docs/Web/HTML">Руководство для начинающих HTML</a><br/>
+	  Youtube видео обучение языку разметки HTML:
+	  <a href="https://youtu.be/5pBcKKiZSGE">Язык HTML</a>,
+	  <a href="https://youtu.be/bWNmJqgri4Q">Язык HTML remake</a><br/>
+	  Youtube видео обучение языку разметки стилей CSS:
+	  <a href="https://youtu.be/iPV5GKeHyV4">Язык CSS</a><br/>
+	  <h3>Список самых популярных тегов в HMTL:</h3>
+	  
+	  0) Тег br/ непарный Переход на новую строку:
+	  В конце этого предложения стоит br/<br/>
+	  
+	  1) Тег href Ссылка на страницу:
+	  <a href="https://google.com">Ссылка</a><br/>
+
+      2) Тег strong Жирное выделение текста:
+      <strong>Жирный BOLD</strong><br/>
+
+      3) Тег em Курсивное выделение:
+      <em>Курсив Italic</em><br/>
+	  
+	  4) Тег h1 самого большого заголовка:
+	  <h1>Самый большой заголовок h1</h1>
+   
+      5) Тег h2 большого заголовка:
+	  <h2>Большой заголовок h2</h2>
+	  
+	  6) Тег h3 среднего заголовка:
+	  <h3>Средний заголовок h3</h3>
+	  
+	  7) Тег h4 малого заголовка:
+	  <h4>Малый заголовок h4</h4>
+	  
+	  8) Тег h5 очень маленького заголовка:
+	  <h5>Маленький заголовок h5</h5>
+	  
+	  9) Тег h6 мельчайшего заголовка:
+	  <h6>Тег h6 мельчайший заголовок</h6>
+	  
+	  10)<br/>
+	  а) Тег img src="" width="" height=""/ непарный Картинка через сайт и установление высоты и ширины картинки (можно задавать один параметр и браузер пропорционально картинку изменит):<br/>
+	  <img src="http://benzol4.com/wp-content/uploads/2018/11/blog-ph-1.jpg" width="300px" height="300px"/><br/>
+	  
+	  б) Тег img src="" width="" height=""/ непарный Картинка через файл на компьютере (файл в папке в котором html файл находится) и установление высоты и ширины картинки:<br/>
+	  <img src="Picture_through_computer_path.png" width="300px" height="300px"/><br/>
+	  
+	  г) Тег img src="images/width=" height=""/ непарный Картинка через файл на компьютере (файл находится в другой папке - в папке images):<br/>
+	  <img src="images/Picture_is_in_different_folder.png" width="300px" height="300px"/><br/>
+	  
+	  11) Создать блок (контейнер), функция - для удобства программиста (для группировки элементов, например для шапки), визуально никак не виден, до него не надо писать br/ , он "выбивает" свою линию для себя:
+	  <div>Содержание блока (контейнера)</div>
+	  
+	  12) Тег table - Таблица; border - ширина рамки вокруг таблицы; tr - создать строку td - создать колонну; в данном случае три колонны и четыре строки:
+	      <table border="3">
+	         <tr><td>Колонна I Строка I</td><td>Колонна II Строка I</td><td>Колонна III Строка I</td></tr>
+			 <tr><td>Колонна I Строка II</td><td>Колонна II Строка II</td><td>Колонна III Строка II</td></tr>
+			 <tr><td>Колонна I Строка III</td><td>Колонна II Строка III</td><td>Колонна III Строка III</td></tr>
+			 <tr><td>Колонна I Строка IV</td><td>Колонна II Строка IV</td><td>Колонна III Строка IV</td></tr>
+	      </table>
+	   13) Тег input Место для ввода текста без текста по умолчанию:<br/>
+	   <input/><br/>
+	   
+	   13) Тег input value="" Место для ввода текста c текстом по умолчанию:<br/>
+	   <input value="Текст по умолчанию"/><br/>
+	   
+	   14) Тег textarea Место для ввода крупного - длинного текста (Условно бесконечное число строк для ввода):<br/>
+	   <textarea></textarea>
+	   
+	   <div id="CSS_test">Содержание блока (контейнера)</div>  <!Этому блоку div задан id чтобы мы потом могли в CSS файлы задать свойства оформления>
+	   
+	   <a id="Wiki_HTML" href="https://en.wikipedia.org/wiki/HTML">Wikipedia HTML</a><br/>
+	   
+	   <div id="Class_school"> <!Новое свойство в HTML - классы, позволяет группировать объекты в группы и затем в CSS задавать им параметры оформления>
+	   <a href="#" class="a12">Aleksandrs Burovs</a><br/> <!a12 - 12a класс, просто в HTML и CSS нельзя называть class или id на цифру>
+	   <a href="#" class="a12">Nikita Antonovs</a><br/>
+	   <a href="#" class="a12">Aleksandra Dmitruka</a><br/>
+	   <a href="#" class="a11 sekmigs">Unknown1</a><br/> <!a11 - 11a класс, просто в HTML и CSS нельзя называть class или id на цифру>
+	   <a href="#" class="a11 nesekmigs">Unknown2</a><br/>  <!У элемента может много классов (здесь например класс a11 и nesekmigs) но лишь один id, поэтому по коду бывает выгоднее использовать классы и меньше места займёт оформления>
+	   <a href="#" class="a11">Unknown3</a><br/>
+	   <a href="#" class="a11">Unknown4</a><br/>
+	   <a href="#" class="a11">Unknown5</a><br/>
+       </div>
+	   
+	   <div class="message">Сообщение класса message</div> <!Это сообщение оформлено рамкой с помощью CSS (все классы message оформлены как message и все нижние тоже)>
+	   <div class="message success">Сообщение класса message success</div> <!Message и success класс у данного сообщения для CSS нужно>
+	   <div class="message fail">Сообщение класса message fail</div> <!Message и fail класс у данного сообщения для CSS нужно>
+	   <div class="message info">Сообщение класса message info</div> <!Message и info класс у данного сообщения для CSS нужно>
+	   <div class="message warning">Сообщение класса message info</div> <!Message и warning класс у данного сообщения для CSS нужно>
+	   
+	   <div id="Red_text">Красный текст</div>
+	
+	
+   </body>   <!Конец блока body>
+
+
+
+</html>   <!Конец всего хода>

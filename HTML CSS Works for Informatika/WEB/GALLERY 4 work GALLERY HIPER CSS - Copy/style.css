@@ -1,0 +1,63 @@
+/*.dws {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+*/
+
+.button{
+	
+	border: 3px solid #218294;
+	font-size: 30px;
+	color: #218294;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 200px;
+	height: 50px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	font-family: Arial, sans-serif;
+	position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #218294;
+	top: 0;
+	left: -100%;
+	opacity: 0.5;
+	transition: 0.3s;
+
+
+}
+
+.button:after {
+	opacity: 1;
+}
+
+.button:hover {
+	color: #fff;
+
+}
+.button:hover::before,
+.button:gover::after {
+	left: 0;
+}
+
+
+head{
+
+}
+body {
+	background: rgb(239, 240, 219); /*Задняя картинка страницы*/
+}

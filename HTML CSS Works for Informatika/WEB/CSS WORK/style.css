@@ -1,0 +1,172 @@
+/*https://youtu.be/wRNinF7YQqQ*/
+  ul{
+	list-style-type: none;
+	padding:6px;
+	margin: 0px;
+	overflow: hidden;
+	background-color: #444444;
+   }
+
+   li a{
+	float: right;
+	display: block;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration:none;
+	border-right: 1px solid black;
+	min-width:60px;
+   }
+   
+li a:hover{
+	background-color: #222222;
+   
+	animation: myGlowAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+   }
+   
+@keyframes myGlowAnimation{
+	50% {text-shadow: 0px 0px 10px yellow;}
+}
+
+#p1 {
+    color:red;
+}
+
+.odd{
+    color:blue;
+}
+
+.even{
+    color:green;
+}
+
+#div1{
+    color:rgb(128, 13, 36);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#div2{
+    color:rgb(0, 104, 107);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: dotted underline;
+    font-size: 18px;
+
+}
+
+body{
+    background: linear-gradient(to right, rgb(147, 225, 255), rgb(0, 235, 125));
+    background-color: rgb(255, 218, 218);
+}
+
+.red{
+    background:red;
+    color:white;
+    font-style: initial;
+    font-weight: bolder;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    background: linear-gradient(to right, red, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+#box1{
+    border: 5px solid;
+    width: 250px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 22px;
+    background: yellowgreen;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 5px solid #222222;
+    padding: 10px;
+}
+
+#welcome{
+    text-shadow: 0px 0px 5px black, 0px -2px 2px;
+}
+
+#box2{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    background: red;
+    font-size: 225px;
+    text-align: center;
+
+    animation: slide;
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes slide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%}
+}
+
+#box2:hover {
+    transform: rotate(300deg) scale(0.1);
+    opacity: 0;
+    background:black;
+    transition: 3s all;
+}
+
+.message {
+	color: #cc0000; /*Цвет шрифта*/
+	background-color: #CFAFAF; /*Задний цвет за буквами*/
+	border: 1px solid #000000;/*ширина рамки тип рамки (dashed или solid) и цвет рамки*/
+	font-size: 20px; /*Размер шрифта*/
+	margin: 10px; /*Длина внешних отступов (margin: 10px; (отступ со всех сторон)) (margin-top: 10px;) (margin-bottom: 10px;) (margin-left: 10px;) (margin-right: 10px)*/
+	padding: 8px; /*Длина внутренних отступов (padding: 10px; (отступ со всех сторон)) (padding-top: 10px;) (padding-bottom: 10px;) (padding-left: 10px;) (padding-right: 10px)*/
+}
+
+.success {
+	background-color: #07EF21; /*Задний цвет за буквами*/
+	color: #FFFFFF; /*Цвет шрифта*/
+}
+
+.fail {
+	background-color: #FF0000; /*Задний цвет за буквами*/
+	color: #FFFFFF; /*Цвет шрифта*/
+}
+
+.info {
+	background-color: #0090D7; /*Задний цвет за буквами*/
+	color: #000000; /*Цвет шрифта*/
+}
+
+.warning {
+	background-color: #ACBC29; /*Задний цвет за буквами*/
+	color: #000000; /*Цвет шрифта*/
+}
+
+.message:hover {  /*hover - при событии наведения мышкой на объект, изменяется класс message, на время пока мышка наведена*/
+	border: 8px solid #000000;
+}
+
+#Red_text {
+    text-align: center;
+}
+
+#Red_text:hover { /*При наведение на объект красный текст, прозрачность сменяется 1*/
+	opacity: 1;
+}
+
+#Red_text:hover { /*При наведение на объект красный текст, он прокрутится на 360 градусов и уменьшиться до 0.3 и будет это делать 2s тк transition: 2s all сверху в тексте написано*/
+	transform: rotate(360deg) scale(1.3);
+	background-color: red;
+}
